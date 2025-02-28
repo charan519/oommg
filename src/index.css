@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --header-height: 4rem;
+    --footer-height: 4rem;
+  }
+
+  html, body {
+    @apply h-full overflow-x-hidden antialiased;
+    -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
+  }
+
+  #root {
+    @apply h-full;
+  }
+}
+
+@layer components {
+  .responsive-container {
+    @apply w-full mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
+  }
+
+  .glass-panel {
+    @apply bg-black/30 backdrop-blur-xl border border-white/20 rounded-3xl;
+  }
+
+  .panel-header {
+    @apply flex items-center justify-between p-4 md:p-6 border-b border-white/10;
+  }
+
+  .panel-content {
+    @apply p-4 md:p-6 overflow-y-auto;
+  }
+
+  .icon-button {
+    @apply p-2 rounded-full hover:bg-white/10 transition-colors duration-300;
+  }
+
+  .toggle-switch {
+    @apply relative w-12 h-6 rounded-full transition-colors duration-300;
+  }
+
+  .toggle-switch-thumb {
+    @apply absolute top-1 left-1 w-4 h-4 rounded-full transition-transform duration-300;
+  }
+
+  .premium-button {
+    @apply relative overflow-hidden transition-all duration-300;
+  }
+
+  .premium-button::before {
+    content: '';
+    @apply absolute inset-0 opacity-0 transition-opacity duration-300;
+    background: linear-gradient(45deg, rgba(59, 130, 246, 0.5), rgba(147, 51, 234, 0.5));
+  }
+
+  .premium-button:hover::before {
+    @apply opacity-100;
+  }
+
+  .text-glow {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+
+  .blue-glow {
+    filter: drop-shadow(0 0 8px rgba(59, 130, 246, 0.6));
+  }
+
+  .purple-glow {
+    filter: drop-shadow(0 0 8px rgba(147, 51, 234, 0.6));
+  }
+}
+
+/* Map styles */
+.leaflet-container {
+  @apply w-full h-full rounded-2xl overflow-hidden shadow-lg;
+}
+
+.map-tiles {
+  @apply transition-all duration-500;
+  filter: brightness(0.7) saturate(1.2) hue-rotate(200deg);
+}
+
+.map-tiles.dark {
+  filter: brightness(0.6) saturate(1.2) hue-rotate(200deg) invert(1) contrast(0.9);
+}
+
+/* Popup styles */
+.custom-popup .leaflet-popup-content-wrapper {
+  @apply bg-black/80 backdrop-blur-md rounded-xl border border-white/20 text-white transition-all duration-300;
+}
+
+.custom-popup .leaflet-popup-tip {
+  @apply bg-black/80;
+}
+
+/* Map animations */
+.leaflet-fade-anim .leaflet-tile,
+.leaflet-zoom-anim .leaflet-zoom-animated {
+  @apply transition-transform duration-500;
+}
+
+.leaflet-marker-icon {
+  @apply transition-all duration-300;
+}
+
+.leaflet-marker-icon:hover {
+  @apply scale-110 -translate-y-1;
+  filter: drop-shadow(0 0 10px rgba(59, 130, 246, 0.5));
+}
+
+.leaflet-polyline {
+  stroke-dasharray: 8;
+  animation: dash 30s linear infinite;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: -1000;
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  @apply w-1.5;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-white/10 rounded;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-white/20 rounded hover:bg-white/30 transition-colors;
+}
+
+/* Responsive optimizations */
+@media (max-width: 640px) {
+  .leaflet-control-zoom {
+    @apply hidden;
+  }
+
+  .leaflet-control-attribution {
+    @apply text-xs;
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) {
+  .hover-effect {
+    @apply transition-none;
+  }
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    @apply transition-none !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+  .glass-panel {
+    @apply bg-black/90 border-white;
+  }
+}

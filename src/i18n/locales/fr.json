@@ -1,0 +1,60 @@
+{
+  "app": {
+    "name": "TravelAI",
+    "tagline": "Votre Compagnon de Voyage IA"
+  },
+  "search": {
+    "placeholder": "Où souhaitez-vous explorer ?",
+    "noResults": "Aucun résultat trouvé",
+    "searching": "Recherche en cours..."
+  },
+  "weather": {
+    "temperature": "Température",
+    "conditions": {
+      "clear": "Journée ensoleillée",
+      "cloudy": "Partiellement nuageux",
+      "rain": "Pluie légère",
+      "snow": "Neige légère",
+      "storm": "Orage",
+      "windy": "Vents forts"
+    }
+  },
+  "settings": {
+    "title": "Paramètres",
+    "theme": {
+      "label": "Thème",
+      "description": "Basculer entre mode clair et sombre",
+      "light": "Clair",
+      "dark": "Sombre"
+    },
+    "language": {
+      "label": "Langue",
+      "description": "Choisissez votre langue préférée"
+    },
+    "notifications": {
+      "label": "Notifications Push",
+      "description": "Recevez des mises à jour en temps réel sur votre voyage"
+    },
+    "units": {
+      "label": "Unités de Distance",
+      "description": "Choisissez votre système de mesure préféré",
+      "metric": "Métrique",
+      "imperial": "Impérial"
+    },
+    "privacy": {
+      "label": "Mode Confidentialité",
+      "description": "Contrôlez le partage de votre localisation"
+    },
+    "sound": {
+      "label": "Effets Sonores",
+      "description": "Activer ou désactiver les sons de l'application"
+    }
+  },
+  "common": {
+    "close": "Fermer",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "loading": "Chargement...",
+    "error": "Une erreur est survenue"
+  }
+}

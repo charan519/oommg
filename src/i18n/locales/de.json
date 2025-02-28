@@ -1,0 +1,60 @@
+{
+  "app": {
+    "name": "TravelAI",
+    "tagline": "Ihr KI-Reisebegleiter"
+  },
+  "search": {
+    "placeholder": "Wo möchten Sie erkunden?",
+    "noResults": "Keine Ergebnisse gefunden",
+    "searching": "Suche läuft..."
+  },
+  "weather": {
+    "temperature": "Temperatur",
+    "conditions": {
+      "clear": "Sonniger Tag",
+      "cloudy": "Teilweise bewölkt",
+      "rain": "Leichter Regen",
+      "snow": "Leichter Schnee",
+      "storm": "Gewitter",
+      "windy": "Starker Wind"
+    }
+  },
+  "settings": {
+    "title": "Einstellungen",
+    "theme": {
+      "label": "Design",
+      "description": "Zwischen Hell- und Dunkelmodus wechseln",
+      "light": "Hell",
+      "dark": "Dunkel"
+    },
+    "language": {
+      "label": "Sprache",
+      "description": "Wählen Sie Ihre bevorzugte Sprache"
+    },
+    "notifications": {
+      "label": "Push-Benachrichtigungen",
+      "description": "Erhalten Sie Echtzeit-Updates zu Ihrer Reise"
+    },
+    "units": {
+      "label": "Entfernungseinheiten",
+      "description": "Wählen Sie Ihr bevorzugtes Maßsystem",
+      "metric": "Metrisch",
+      "imperial": "Imperial"
+    },
+    "privacy": {
+      "label": "Privatsphäre-Modus",
+      "description": "Steuern Sie Ihre Standortfreigabe"
+    },
+    "sound": {
+      "label": "Soundeffekte",
+      "description": "App-Sounds aktivieren oder deaktivieren"
+    }
+  },
+  "common": {
+    "close": "Schließen",
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "loading": "Lädt...",
+    "error": "Ein Fehler ist aufgetreten"
+  }
+}

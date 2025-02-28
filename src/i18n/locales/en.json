@@ -1,0 +1,60 @@
+{
+  "app": {
+    "name": "TravelAI",
+    "tagline": "Your AI Travel Companion"
+  },
+  "search": {
+    "placeholder": "Where would you like to explore?",
+    "noResults": "No results found",
+    "searching": "Searching..."
+  },
+  "weather": {
+    "temperature": "Temperature",
+    "conditions": {
+      "clear": "Sunny day",
+      "cloudy": "Partly cloudy",
+      "rain": "Light rain",
+      "snow": "Light snow",
+      "storm": "Thunderstorm",
+      "windy": "Strong winds"
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "theme": {
+      "label": "Theme",
+      "description": "Switch between light and dark mode",
+      "light": "Light",
+      "dark": "Dark"
+    },
+    "language": {
+      "label": "Language",
+      "description": "Choose your preferred language"
+    },
+    "notifications": {
+      "label": "Push Notifications",
+      "description": "Get real-time updates about your journey"
+    },
+    "units": {
+      "label": "Distance Units",
+      "description": "Choose your preferred measurement system",
+      "metric": "Metric",
+      "imperial": "Imperial"
+    },
+    "privacy": {
+      "label": "Privacy Mode",
+      "description": "Control your location sharing settings"
+    },
+    "sound": {
+      "label": "Sound Effects",
+      "description": "Enable or disable app sounds"
+    }
+  },
+  "common": {
+    "close": "Close",
+    "save": "Save",
+    "cancel": "Cancel",
+    "loading": "Loading...",
+    "error": "An error occurred"
+  }
+}

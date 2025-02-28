@@ -1,0 +1,60 @@
+{
+  "app": {
+    "name": "TravelAI",
+    "tagline": "Tu Compañero de Viaje con IA"
+  },
+  "search": {
+    "placeholder": "¿Dónde te gustaría explorar?",
+    "noResults": "No se encontraron resultados",
+    "searching": "Buscando..."
+  },
+  "weather": {
+    "temperature": "Temperatura",
+    "conditions": {
+      "clear": "Día soleado",
+      "cloudy": "Parcialmente nublado",
+      "rain": "Lluvia ligera",
+      "snow": "Nieve ligera",
+      "storm": "Tormenta",
+      "windy": "Vientos fuertes"
+    }
+  },
+  "settings": {
+    "title": "Configuración",
+    "theme": {
+      "label": "Tema",
+      "description": "Cambiar entre modo claro y oscuro",
+      "light": "Claro",
+      "dark": "Oscuro"
+    },
+    "language": {
+      "label": "Idioma",
+      "description": "Elige tu idioma preferido"
+    },
+    "notifications": {
+      "label": "Notificaciones Push",
+      "description": "Recibe actualizaciones en tiempo real sobre tu viaje"
+    },
+    "units": {
+      "label": "Unidades de Distancia",
+      "description": "Elige tu sistema de medición preferido",
+      "metric": "Métrico",
+      "imperial": "Imperial"
+    },
+    "privacy": {
+      "label": "Modo Privacidad",
+      "description": "Controla la compartición de tu ubicación"
+    },
+    "sound": {
+      "label": "Efectos de Sonido",
+      "description": "Activar o desactivar sonidos de la aplicación"
+    }
+  },
+  "common": {
+    "close": "Cerrar",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "loading": "Cargando...",
+    "error": "Ocurrió un error"
+  }
+}
